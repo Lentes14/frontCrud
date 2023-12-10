@@ -87,7 +87,7 @@
                                     <td>
                                         <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)"    >Eliminar</button>
                                         
-                                        <a class="btn btn-primary" :href="'editProduct.html'+ producto.id+'&nombre=' +producto.nombre+ '&precio='+producto.precio+'&stock='+producto.stock +  '&imagen='+producto.imagen" >Editar</a>
+                                        <a class="btn btn-primary" :href='editProduct.html?id='+ producto.id+'&nombre=' +producto.nombre+ '&precio='+producto.precio+'&stock='+producto.stock +  '&imagen='+producto.imagen" >Editar</a>
                                     </td>
                                 </tr>
                             </tbody>
