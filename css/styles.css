@@ -120,17 +120,37 @@ header input:checked ~ nav a {
   opacity:1;
   transition:opacity 150ms ease-in-out 250ms;
 }
-.mainContainer {
-  background-image:linear-gradient(var(--text-color),rgba(247, 247, 247, 0.151)), url('/img/backgroundMain.png');
-  background-size:cover;
-  background-position:center center;
+.containerLista {
+  
+  text-align: center;
+  position:relative;
+  top: 60px;
+  
+}
+
+.containerAlta {
   height:100vh;
   display:grid;
   justify-content:center;
   align-content:center;
-  color:#fff;
   line-height:2.0;
   text-align:center;
+}
+
+.containerEditar {
+  height:100vh;
+  display:grid;
+  justify-content:center;
+  align-content:center;
+  line-height:2.0;
+  text-align:center;
+}
+
+.mainContainer {
+  background-image:linear-gradient(var(--text-color),rgba(247, 247, 247, 0.151)), url('/img/backgroundMain.png');
+  background-size:cover;
+  background-position:center center;
+ 
 }
 .mainContainer h3{
   text-transform: uppercase;
