@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="../css/styleform.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favIcon -->
+    <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/ico/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="16x16" href="img/ico/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="32x32" href="img/ico/favicon-32x32.png">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/c58aa94ed9.js" crossorigin="anonymous"></script>
+    <title>Formulario</title>
+    <script>
+        function validateForm() {
+
+            let nombre = document.forms["decoracion"]["fname"].value;
+            if (nombre == "") {
+                alert("Por favor ingrese su nombre");
+                return false;
+            }
+
+            let apellido = document.forms["decoracion"]["lname"].value;
+            if (apellido == "") {
+                alert("Por favor ingrese su apellido");
+                return false;
+            }
+
+            let telefono = document.forms["decoracion"]["phone"].value;
+            if (telefono == "") {
+                alert("Por favor ingrese su teléfono de contacto");
+                return false;
+            }
+
+            let mail = document.forms["decoracion"]["email"].value;
+            if (mail == "") {
+                alert("Por favor ingrese su dirección de email");
+                return false;
+            }
+
+            var validEmail =  /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+
+            if( !validEmail.test(mail) ){
+                alert('Email inválido, por favor ingrese de nuevo');
+                return false;
+            }
+    
+        }
+        </script>
+</head>
+<body class="form">
+<header>
+    <div class="headerTitle">
+      <a href="/index.html">The Makers Home</a>
+    </div>
+    <input type="checkbox" id="check">
+    <nav>
+      <ul>
+        <li class="active">
+          <a href="/index.html">Home</a>
+        </li>
+        <li>
+          <a href="/pages/quienessomos.html">Nosotros</a>
+        </li>
+        <li>
+          <a href="/pages/trabajosrealizados.html">Servicios</a>
+        </li>
+        <li>
+          <a href="/pages/tienda.html">Tienda</a>
+        </li>
+        <li>
+          <a href="/pages/form.html">Contacto</a>
+        </li>
+        <li>
+          <a href="/pages/controlPanel.html">Control Panel</a>
+        </li>
+      </ul>
+    </nav>
+    <label for="check">
+      <span></span>
+    </label>
+  </header>
+    <div class="container">
+        <h1>Contactate con nosotros</h1>
+        <h2>Dejanos tus datos y nos comunicaremos</h2>
+        <form action="" name="decoracion" onsubmit="return validateForm()" method="get">
+            <div class="input-group">
+                <label for="fname">Nombre:</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="fname" name="fname">
+            </div>
+            <div class="input-group">
+                <label for="lname">Apellido:</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="lname" name="lname">
+            </div>
+            <div class="input-group">
+                <label for="phone">Teléfono</label>
+            </div>
+            <div class="input-group">
+                <input type="tel" id="phone" name="input-tel">
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="email" name="email">
+            </div>
+            <div class="input-group">
+                <label for="mensaje">Dejanos tu mensaje:</label>
+            </div>
+            <div class="input-group">
+                <textarea name="messaje" id="mensaje" cols="30" rows="10">Inserte su comentario</textarea>
+            </div>
+            <div class="input-group">
+                <button type="submit" class="btms">Enviar</button>
+                <input type="reset" class="btms">
+            </div>
+
+        </form>
+    </div>
+    <footer class="footerContainer">
+        <div class="footerLinks">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="footerCopy">
+          <p>&copy; 2023 <a href="/index.html">TheMakersHome</a>. All rights reserved. Designed by Grupo 19 </a>
+          </p>
+        </div>
+      </footer>
+</body>
+</html>

@@ -121,36 +121,56 @@ header input:checked ~ nav a {
   transition:opacity 150ms ease-in-out 250ms;
 }
 .containerLista {
-  
+  background-image:linear-gradient(var(--text-color),rgba(247, 247, 247, 0.151)), url('/img/backgroundMain.png');
+  background-size:cover;
+  background-position:center center;
+  background-position:center center;
+  height:100vh;
   text-align: center;
   position:relative;
   top: 60px;
+  color:#fff;
   
 }
 
+.containerLista h1{}
+
 .containerAlta {
+  background-image:linear-gradient(var(--text-color),rgba(247, 247, 247, 0.151)), url('/img/backgroundMain.png');
+  background-size:cover;
+  background-position:center center;
   height:100vh;
   display:grid;
   justify-content:center;
   align-content:center;
   line-height:2.0;
-  text-align:center;
+  text-align:center; 
+  color:#fff;
 }
 
 .containerEditar {
+  background-image:linear-gradient(var(--text-color),rgba(247, 247, 247, 0.151)), url('/img/backgroundMain.png');
+  background-size:cover;
+  background-position:center center;
   height:100vh;
   display:grid;
   justify-content:center;
   align-content:center;
   line-height:2.0;
   text-align:center;
+  color:#fff;
 }
-
 .mainContainer {
   background-image:linear-gradient(var(--text-color),rgba(247, 247, 247, 0.151)), url('/img/backgroundMain.png');
   background-size:cover;
   background-position:center center;
- 
+  height:100vh;
+  display:grid;
+  justify-content:center;
+  align-content:center;
+  color:#fff;
+  line-height:2.0;
+  text-align:center;
 }
 .mainContainer h3{
   text-transform: uppercase;

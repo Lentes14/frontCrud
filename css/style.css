@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  background-color: rgb(204, 232, 225);
+
+}
+
+.content{
+  margin: auto 20px
+}
+
+.force-top{
+  height: 120px;
+}
