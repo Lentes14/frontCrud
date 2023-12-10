@@ -21,7 +21,7 @@ function guardar() {
         .then(function () {
             console.log("creado")
             alert("Grabado")
-            window.location.href = "/controlPanel.html";  
+            window.location.href = "/pages/controlpanel.html";  
             // Handle response we get from the API
         })
         .catch(err => {
