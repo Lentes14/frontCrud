@@ -26,7 +26,7 @@ function modificar() {
         stock: s,
         imagen:i
     }
-    let url = "http://localhost:5000/productos/"+id
+    let url = "https://lentes14.pythonanywhere.com/productos/"+id
     var options = {
         body: JSON.stringify(producto),
         method: 'PUT',
@@ -37,7 +37,7 @@ function modificar() {
         .then(function () {
             console.log("modificado")
             alert("Registro modificado")
-            window.location.href = "/pages/controlpanel.html";  
+            window.location.href = "./productos.html";  
         //NUEVO,  si les da error el fetch  comentar esta linea que puede dar error  
         })
         .catch(err => {
