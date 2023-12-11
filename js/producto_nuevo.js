@@ -7,11 +7,12 @@ function guardar() {
 
     let producto = {
         nombre: n,
+        descripcion: d,
         precio: p,
         stock: s,
         imagen: i
     }
-    let url = "http://localhost:5000/productos"
+    let url = "https://lentes14.pythonanywhere.com/productos"
     var options = {
         body: JSON.stringify(producto),
         method: 'POST',
