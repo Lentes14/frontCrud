@@ -7,7 +7,6 @@ function guardar() {
 
     let producto = {
         nombre: n,
-        descripcion: d,
         precio: p,
         stock: s,
         imagen: i
